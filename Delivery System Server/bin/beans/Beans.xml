@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="dbaConnection" class="main.DBAConnection">
+		<property name="driver" value="com.mysql.jdbc.Driver"></property>
+		<property name="url"
+			value="jdbc:mysql://127.0.0.1:3306/delivery">
+		</property>
+		<property name="user" value="system"></property>
+		<property name="password" value="system"></property>
+	</bean>
+</beans>
